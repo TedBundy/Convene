@@ -1,0 +1,47 @@
+.under-header {
+  @include clearfix;
+  @include breakpoint(large) {
+    padding-top: 42px;
+  }
+  h2 {
+    font-family: 'HelveticaLight', sans-serif;
+    font-size: 44px;
+    color: #FFF;
+    @include breakpoint(large) {
+      padding-top: 17px;
+    }
+    @include breakpoint(medium) {
+      margin-bottom: 35px;
+    }
+    @include breakpoint(small) {
+      margin-bottom: 35px;
+      font-size: 38px;
+      text-align: center;
+    }
+    @include breakpoint(extra-small) {
+      margin-bottom: 35px;
+      font-size: 38px;
+      text-align: center;
+    }
+    @include breakpoint(nano-small) {
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  h2 span {
+    display: inline;
+    background-color: #1769a4;
+    line-height: 60px;
+    letter-spacing: 1.4px;
+    @include box-shadow(0 0 0 11px #1769a4, -3px 0 0 11px #1769a4);
+    @include breakpoint(nano-small) {
+      line-height: 36px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  .led {
+    padding-top: 60px;
+  }
+}

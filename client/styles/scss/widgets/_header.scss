@@ -1,0 +1,103 @@
+header {
+  .navbar-header {
+    padding-right: 0px;
+    padding-top: 36px;
+    @media(max-width: 767px) {
+      padding-top: 0px;
+      img {
+        padding-top: 36px;
+        @include breakpoint(extra-small) {
+          width: 60%;
+          padding-top: 20px;
+        }
+        @include breakpoint(nano-small){
+          width: 55%;
+          padding-top: 43px;
+        }
+      }
+    }
+  }
+
+  .navbar-default {
+    border: none;
+    background-color: transparent;
+    .navbar-nav {
+      margin: 0px -15px;
+      background-color: #57baff;
+      text-align: center;
+      @media(min-width: 768px) {
+        padding-top: 35px;
+        background-color: transparent;;
+      }
+      li {
+        @include breakpoint(extra-small) {
+          border-top: 1px solid #57baff;
+          border-bottom: 4px solid #53b1f2;
+        }
+        @include breakpoint(nano-small){
+          border-top: 1px solid #57baff;
+          border-bottom: 3px solid #53b1f2;
+        }
+        a {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 13px;
+          color: #061b2a;
+          @include transition-property(all);
+          @include transition-duration(400ms);
+          @media (max-width: 767px) {
+            font-family: "HelveticaLight";
+            font-size: 40px;
+            font-weight: lighter;
+            line-height: 98px;
+            color: white;
+          }
+          @media (max-width: 767px) {
+            font-size: 25px;
+            line-height: 55px;
+          }
+          &:hover {
+            color: #024aff;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    margin: 0;
+    padding: 45px 33px 43px 34px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent !important;
+    .icon-bar {
+      width: 36px;
+      height: 6px;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      background-color: #d2d4d4;
+    }
+  }
+  .but-style {
+    background-color: #57baff !important;
+    .icon-bar{
+    background-color: #ffffff!important;
+    }
+  }
+  .collapsed {
+    background-color: transparent !important;
+    .icon-bar {
+      background-color: #d2d4d4 !important;
+    }
+  }
+  .navbar-collapse {
+    border: none;
+  }
+ .navbar{
+   @include breakpoint(nano-small) {
+      margin-bottom: 0;
+    }
+   }
+ }
+
+

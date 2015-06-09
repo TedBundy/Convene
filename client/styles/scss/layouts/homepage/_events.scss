@@ -1,0 +1,74 @@
+.events {
+  padding-top: 110px;
+  padding-bottom: 157px;
+  background-color: #39a5f0;
+  color: #ffffff;
+  @include breakpoint(extra-small){
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(nano-small) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+  h2 {
+    padding-bottom: 75px;
+    font-family: 'HelveticaLight';
+    font-size: 36px;
+    text-align: center;
+    line-height: 46px;
+    letter-spacing: 1.1px;
+    @include breakpoint(extra-small) {
+      padding-bottom: 40px;
+    }
+    @include breakpoint(nano-small) {
+      padding-bottom: 40px;
+      font-size: 23px;
+      letter-spacing: 0.6px;
+      line-height: 28px;
+    }
+  }
+  figure {
+    display: inline-block;
+    text-align: center;
+    @include breakpoint(large){
+      width: 316px;
+    }
+    figcaption {
+      text-align: center;
+      h3 {
+        margin-top: 25px;
+        margin-bottom: 16px;
+        font-family: 'HelveticaLight', sans-serif;
+      }
+      h3.confirm {
+        margin-top: 19px;
+      }
+      p {
+        font-family: 'HelveticaLight', sans-serif;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.9px;
+        @include breakpoint(exstra-small) {
+          letter-spacing: 0.4px;
+          line-height: 30px;
+          font-size: 28px;
+        }
+        @include breakpoint(nano-small){
+        letter-spacing: 0.2px;
+        line-height: 15px;
+        font-size: 14px;
+        }
+      }
+    }
+    @include breakpoint(small){
+     padding-top: 50px;
+    }
+    @include breakpoint(extra-small) {
+      padding-top: 50px;
+    }
+    @include breakpoint(nano-small) {
+      padding-top: 30px;
+    }
+  }
+}

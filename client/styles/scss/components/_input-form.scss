@@ -1,0 +1,158 @@
+.input-form {
+  padding-top: 120px;
+  padding-bottom: 175px;
+  text-align: center;
+  .sign-in-up {
+    display: inline-block;
+    ul {
+      border: none;
+      li {
+        width: 50%;
+        border: 1px solid #d4d4d4;
+        background-color: #f7f8f8;
+        text-align: center;
+        @include box-shadow(0 1px 1px 0 rgba(#000000, 0.12), 0 1px 0px 0 rgba(#ffffff, 0.35) inset);
+        @include breakpoint(small) {
+          width: 100%;
+          &:last-child {
+            margin-top: 20px;
+          }
+        }
+        @include breakpoint(extra-small) {
+          width: 100%;
+          &:last-child {
+            margin-top: 20px;
+          }
+        }
+        a {
+          height: 100%;
+          padding: 0;
+          border: none;
+          background-color: transparent;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 59px;
+          color: #6c6c6c;
+          @include breakpoint(small) {
+            font-size: 15px;
+          }
+          @include breakpoint(extra-small) {
+            font-size: 15px;
+          }
+          @include breakpoint(nano-small) {
+            font-size: 10px;
+          }
+          &:hover {
+            border: none;
+            padding: 0;
+            background-color: transparent;
+          }
+          &:focus {
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            color: #ffffff;
+          }
+        }
+      }
+      .sign-up {
+        @include border-radius(3px 0 0 3px);
+      }
+      .sign-in {
+        @include border-radius(0 3px 3px 0);
+      }
+      .active {
+        border: 1px solid #287fbe;
+        background-color: #4da1e0;
+        @include box-shadow(0 1px 1px 0 rgba(#000000, 0.12), 0 1px 0px 0 rgba(#ffffff, 0.35) inset);
+        @include background-image(linear-gradient(top, rgba(#000000, 0.1) 0%, rgba(#808080, 0.1) 100%));
+        a {
+          color: #ffffff;
+          @include text-shadow(0 1px 2px rgba(#000000, 0.75));
+        }
+      }
+    }
+    form {
+      padding-top: 30px;
+      @include box-sizing(border-box);
+      input {
+        width: 100%;
+        height: 40px;
+        padding-left: 9px;
+        border: 1px solid #d4d4d4;
+        outline: none;
+        background-color: #f7f8f8;
+        line-height: 40px;
+        @include box-shadow(0 1px 1px 0 rgba(#000000, 0.12), 0 1px 0px 0 rgba(#ffffff, 0.35) inset);
+        @include border-radius(3px);
+        @include transition-property(all);
+        @include transition-duration(400ms);
+        &:focus {
+          background-color: #eaebff;
+        }
+      }
+      .glyph {
+        height: 40px;
+        line-height: 40px;
+        font-size: 19px;
+      }
+      .glyph-passw {
+        right: 15px;
+        color: #9dd865;
+        font-size: 19px;
+      }
+      .glyph-passw-repeat {
+        right: 15px;
+        color: #ff5958;
+        font-size: 19px;
+      }
+
+      .button-back {
+        float: left;
+        width: 100%;
+        height: 58px;
+        border: 1px solid #babcbd;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #696a6a;
+        @include border-radius(3px);
+        @include text-shadow(0 1px 0px 0 rgba(#ffffff, 0.75));
+        @include box-shadow(0 1px 1px 0 rgba(#000000, 0.12), 0 1px 0px 0 rgba(#ffffff, 0.35) inset);
+        @include background-image(linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%));
+        @include breakpoint(large) {
+          width: 50%;
+          margin-top: 39px;
+         }
+        }
+
+      .button-sign-up {
+        float: right;
+        width: 100%;
+        height: 58px;
+        border: 1px solid #287fbe;
+        background-color: #4da1e0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #ffffff;
+        @include border-radius(3px);
+        @include text-shadow(0 1px 2px rgba(#000000, 0.45));
+        @include box-shadow(0 1px 1px 0 rgba(#000000, 0.12), 0 1px 0px 0 rgba(#ffffff, 0.35) inset);
+        @include background-image(linear-gradient(top, rgba(#000000, 0.1) 0%, rgba(#808080, 0.1) 100%));
+        @include breakpoint(large){
+          margin-top: 39px;
+        }
+      }
+    }
+  }
+  @include breakpoint(small) {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  @include breakpoint(extra-small) {
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+}

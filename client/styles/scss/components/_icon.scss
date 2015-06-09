@@ -1,0 +1,54 @@
+.icon {
+  float: left;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid;
+  @include border-radius(3px 0px 0px 3px);
+  @include box-shadow(inset 0px 2px 2px 0px rgba(255, 255, 255, 0.35));
+  @include breakpoint(extra-small) {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+.twitter {
+  padding: 8px 9px 8px 11px;
+  border-color: #287FBE;
+  background-color: #00aaef;
+  @include breakpoint(extra-small) {
+    padding: 16px 20px 14px 20px;
+  }
+}
+
+.facebook {
+  padding: 6px 16px 6px 17px;
+  border-color: #253c6f;
+  background-color: #39579a;
+  @include breakpoint(extra-small) {
+    padding: 11px 31px 11px 29px;
+  }
+}
+
+.google {
+  padding: 6px 16px 4px 16px;
+  border-color: #aa1828;
+  background-color: #d05340;
+  @include breakpoint(extra-small) {
+    padding: 12px 30px 10px 29px;
+  }
+}
+
+.email {
+  padding: 7px 11px 5px 11px;
+  border-color: #287fbe;
+  background-color: #40a0e4;
+  @include breakpoint(extra-small) {
+    padding: 14px 22px 10px 22px;
+  }
+}
+.social-twitter{
+  width: 26px;
+  height: 21px;
+  margin: 8px auto;
+}
+

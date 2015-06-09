@@ -1,0 +1,18 @@
+body {
+@include user-select(none);
+  .container-background {
+    background-image: url("../../../client/images/background_under-header.png");
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .background-blue {
+    background-image: url("../../images/background-events.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .background-tweets {
+    background-image: url("../../../client/images/background-tweets.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

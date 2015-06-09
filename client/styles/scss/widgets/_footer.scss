@@ -1,0 +1,33 @@
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fcf7f4;
+  img{
+    @include breakpoint(extra-small) {
+      margin: 0 auto;
+    }
+    @include breakpoint(nano-small) {
+      margin: 0 auto;
+    }
+  }
+  span {
+    padding-left: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+    color: #494a4a;
+    @include breakpoint(extra-small){
+      margin-top: 60px;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+    @include breakpoint(nano-small){
+      margin-top: 25px;
+      font-size: 12px;
+      line-height:20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Convene</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="client/styles/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body class="homepage">
+<div class="container-background">
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-default nav-color">
+                <div class="row">
+                    <div class="navbar-header col-lg-3 col-lg-offset-1">
+                        <button type="button" class="navbar-toggle collapsed but-style" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar icon-color"></span>
+                            <span class="icon-bar icon-color"></span>
+                            <span class="icon-bar icon-color"></span>
+                        </button>
+                        <a href="#">
+                            <img class="img-responsive" alt="Responsive image"
+                                 src="client/images/header-footer/logo.png"
+                                 alt="/">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse list col-lg-3 col-lg-offset-4"
+                         id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="javascript:void(0)">About Convene</a></li>
+                            <li><a href="javascript:void(0)">Take the Tour</a></li>
+                            <li><a href="javascript:void(0)">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="under-header">
+        <div class="row">
+            <h2 class="col-lg-7 col-lg-offset-1 col-md-6  col-sm-10 col-sm-offset-1 col-xs-12">
+                <span>Getting things done together has never been so easy!</span>
+            </h2>
+
+            <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 button-li">
+                <ul>
+                    <li>
+                        <a href="#"><img class="icon twitter" src="client/images/under-header/twitter.png" alt=""/>
+
+                            <p>Use your Twitter Account</p></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon facebook" src="client/images/under-header/fc.png" alt=""/>
+
+                            <p>Use your Facebook Account</p></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon google" src="client/images/under-header/g.png" alt=""/>
+
+                            <p>Use your Google+ Sign In</p></a>
+                    </li>
+
+                    <li><a href="#"><span>or you can</span></a></li>
+
+                    <li>
+                        <a href="#"><img class="icon email" src="client/images/under-header/at.png" alt=""/>
+
+                            <p>Use your Email Address</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="row">
+            <img class="led img-responsive col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1"
+                 src="client/images/under-header/led.png" alt=""/>
+            </div>
+        </section>
+    </div>
+    <section class="input-form">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 sign-in-up">
+                <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active sign-up">
+                            <a href="#sign-up" aria-controls="sign-up" role="tab" data-toggle="tab">Sign Up with
+                                Email</a>
+                        </li>
+                        <li role="presentation" class="sign-in">
+                            <a href="#sign-in" aria-controls="sign-in" role="tab" data-toggle="tab">Sign In with
+                                Email</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="sign-up">
+                            <form action="/">
+                                <div class="form-group has-feedback">
+                                    <input type="text" placeholder="Your Name" name="Firstname" class="form-control">
+                                    <span class="glyphicon glyphicon-question-sign form-control-feedback glyph"
+                                          aria-hidden="true"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <input type="email" placeholder="Email Address" name="Email" class="form-control"
+                                           required>
+                                    <span class="glyphicon glyphicon-question-sign form-control-feedback glyph"
+                                          aria-hidden="true"></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
+                                        <input type="password" placeholder="Password" name="Password"
+                                               class="form-control" required>
+                                        <span class="glyphicon glyphicon-ok-sign form-control-feedback glyph glyph-passw"
+                                              aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
+                                        <input type="password" placeholder="Repeat Password" name="Password"
+                                               class="form-control" required>
+                                        <span class="glyphicon glyphicon-remove-sign form-control-feedback glyph glyph-passw-repeat"
+                                              aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+                                        <button class="button-back">Back</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+                                        <button class="button-sign-up">Sign Up</button>
+                                    </div>
+                                 </div>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="sign-in">
+                            <form action="/" method="post">
+                                <div class="form-group has-feedback">
+                                    <input type="email" placeholder="Email Address" name="Email" class="form-control"
+                                           required>
+                                    <span class="glyphicon glyphicon-question-sign form-control-feedback glyph"
+                                          aria-hidden="true"></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group has-feedback">
+                                        <input type="email" placeholder="Password" name="Password" class="form-control"
+                                               required>
+                                        <span class="glyphicon glyphicon-ok-sign form-control-feedback glyph glyph-passw"
+                                              aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group ">
+                                        <button class=" button-back">Back</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                                        <button class=" button-sign-up" >Sign In</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<main>
+    <section class="events background-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1">
+                    <h2>Life is full of meetings and events - both personal
+                        and professional. Now there's way to manage, pacticipate, and keep track of it.</h2>
+                        </div>
+                        </div>
+            <div class="row">
+                    <figure class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <img src="client/images/events/calendar.png" alt="calendar"/>
+                        <figcaption>
+                            <h3>Connect</h3>
+
+                            <p>Sync your calendar and contacts, to meet with anyone, anywhere, anytime - from the
+                                smallest
+                                groups to the largest conventions.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <img src="client/images/events/notes.png" alt="notes"/>
+                        <figcaption>
+                            <h3>Collaborate</h3>
+
+                            <p>Create agendas, share documents, take notes, and make commitments using the all-in-one
+                                meeting
+                                canvas.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <img src="client/images/events/clock.png" alt="clock"/>
+                        <figcaption>
+                            <h3 class="confirm">Confirm</h3>
+
+                            <p>Access the history of every meeting, contact, and commitment to know what happened,
+                                what's next
+                                and why it matters.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+        </div>
+    </section>
+    <section class="tweets background-tweets">
+        <div class="container">
+            <div class="row">
+                <div class="twit col-lg-12">
+                    <img src="client/images/tweets/twit.png" alt="twit"/>
+
+                    <h2>Tweets about Convene</h2>
+                </div>
+            </div>
+            <div class="line-1 row">
+                <figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-7 left-arrow box">
+                            <p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-7 left-arrow box">
+                            <p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur
+                                odio a commodo.
+                                In</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 hidden-sm col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-7 left-arrow box">
+                            <p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit
+                                ultricies
+                                libero</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+
+                <figure class="col-lg-3 col-lg-offset-0 hidden-md hidden-sm col-xs-8 col-xs-offset-2">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 col-xs-7 left-arrow box">
+                            <p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam,
+                                commodo
+                                in</p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="line-2 row">
+                <figure class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 right-arrow box">
+                            <p>Vestibulum viverra, mi ac eleifend egestas, nisi est mattis dolor, et volutpat.</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="col-lg-3 col-md-4 col-sm-6 hidden-xs">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 right-arrow box">
+                            <p>Fusce quis tortor eu erat dignissim varius et luctus augue. Etiam rhoncus consectetur
+                                odio a commodo.
+                                In</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 right-arrow box">
+                            <p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit
+                                ultricies
+                                libero</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <div class="row">
+                        <a href="#"><img src="client/images/tweets/photo.png"
+                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4" alt="photo"/></a>
+                        <figcaption class="col-lg-8 col-md-8 col-sm-8 right-arrow box">
+                            <p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam,
+                                commodo
+                                in</p>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="tour">
+        <div class="container">
+            <div class="row">
+                <p class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    Interested in learning more about Convene?</p>
+                <img class="col-lg-2 hidden-md hidden-sm hidden-xs" src="client/images/tour/wave.png" alt=""/>
+                <a class="col-lg-3 col-lg-offset-0  col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 button-tour"
+                   href="#">Take the Tour</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <a class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1"
+               href="#">
+                <img class="img-responsive" alt="Responsive image"
+                     src="client/images/header-footer/footer-logo.png"
+                     alt="/">
+            </a>
+            <span class="col-lg-3 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                All rights reserved © 2013
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
